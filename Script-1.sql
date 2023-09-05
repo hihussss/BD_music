@@ -37,7 +37,7 @@ create table if not exists spisok_song (
 id SERIAL primary key,
 album_id integer references spisok_album(id),
 name_song VARCHAR(30) not null,
-duration interval not null
+duration integer not null
 );
 --Связь Сборник и песен
 create table if not exists album_artist_sbornik (
